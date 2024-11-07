@@ -31,14 +31,14 @@
 void pigun_calculate_aim() {
 	
 	float aim_x, aim_y;
-	float x1 = pigun.detector.peaks[0].col;
-	float x2 = pigun.detector.peaks[2].col;
-	float x3 = pigun.detector.peaks[1].col;
-	float x4 = pigun.detector.peaks[3].col;
-	float y1 = pigun.detector.peaks[0].row;
-	float y2 = pigun.detector.peaks[2].row;
-	float y3 = pigun.detector.peaks[1].row;
-	float y4 = pigun.detector.peaks[3].row;
+	float x1 = pigun.detector.peaks[0].x;
+	float x2 = pigun.detector.peaks[2].x;
+	float x3 = pigun.detector.peaks[1].x;
+	float x4 = pigun.detector.peaks[3].x;
+	float y1 = pigun.detector.peaks[0].y;
+	float y2 = pigun.detector.peaks[2].y;
+	float y3 = pigun.detector.peaks[1].y;
+	float y4 = pigun.detector.peaks[3].y;
 
 #ifdef PIGUN_DEBUG
 	printf("peaks: %f-%f/%f  %f-%f/%f  %f-%f/%f  %f-%f/%f \n",
